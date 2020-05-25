@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/skills.css">
+</head>
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div id="navbar">
+        <a href="../index.html">Home</a>
+        <a href="mystory.html">My Story</a>
+        <a href="photos.html">Photos</a>
+        <a class = "active" href="skills.html">Skills</a>
+       
+    </div>
+
+    <h1 class="tex">My Skills</h1>
+
+    <p class="text">Please leave your feedback on my profiency in certain skills.</p>
+
+    <div id="foo">
+
+    <form id="fo">
+        Name: <input type="text" name="full name" required>
+        <br>
+        Skill:
+        <select id ="ski" name="skill">
+            <option value="coding">Coding</option>
+            <option value="dance">Dance</option>
+            <option value="music">Music</option>
+            <option value="pspk">Public Speaking</option>
+        </select>
+        <br>
+        Rating:
+        <select name="rating">
+            <option value="adv">Advanced</option>
+            <option value="int">Intermedieate</option>
+            <option value="beg">Beginner</option>
+        </select>
+        <br>
+        Comments: <input id="comment" type="text" name="comment" required>
+        <br>
+
+        <button type="button" onclick="add()">SUBMIT</button>
+         <button type="button" onclick="ResetForm()">Reset</button>
+        <button type="button" onclick="table_upd()">Display</button>
+        
+    </form>
+
+    </div>
+
+    
+
+        <table id="skill">
+
+                <thead>
+
+                        <td>Name</td>
+                        <td>Skill</td>
+                        <td>Level</td>
+                        <td>Comment</td>
+
+
+                </thead>
+
+                <tbody></tbody>
+    
+
+        </table>
+
+
+    </div>
+
+
+    <script src="../js/skills.js"></script>
+    
+</body>
+</html>

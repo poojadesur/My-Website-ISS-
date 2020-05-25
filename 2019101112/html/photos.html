@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/photos.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <title>Photos</title>
+</head>
+<body>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+    <div id="navbar">
+        <a href="../index.html">Home</a>
+        <a href="mystory.html">My Story</a>
+        <a class = "active" href="photos.html">Photos</a>
+        <a href="skills.html">Skills</a>
+        
+    </div>
+
+    <h1 class="tex">Look at my friends and family.</h1>
+
+    
+    <div class="slideshow-container">
+
+        
+        <div class="mySlides">
+          <img src="../img/birthday.jpg" style="width:100%">
+          <div class="text">my friends from home</div>
+        </div>
+      
+        <div class="mySlides">
+          <img src="../img/famjam.jpg" style="width:100%">
+          <div class="text">this is my family</div>
+        </div>
+      
+        <div class="mySlides">
+          <img src="../img/sami.jpg" style="width:100%">
+          <div class="text">more friends</div>
+        </div>
+
+        <div class="mySlides">
+            <img src="../img/appa.jpg" style="width:100%">
+            <div class="text">home</div>
+        </div>
+
+        <div class="mySlides">
+            <img src="../img/ezone.jpg" style="width:100%">
+            <div class="text">i miss them</div>
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>  <!--heavy left pointing arrow-->
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>   <!--plus slides on right and left-->
+      </div>
+      <br>
+      
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+
+      </div>
+
+
+      <script src="../js/photos.js"></script>
+
+
+
+</body>
+</html>

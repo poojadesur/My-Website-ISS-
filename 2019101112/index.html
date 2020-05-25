@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/about.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!--<script src="about.js"></script>  when you change folders change this-->
+    <title>Document</title>
+    <script>
+    function counter() {
+        if( sessionStorage.counter)
+        {
+            sessionStorage.counter = Number(sessionStorage.counter) + 1;
+
+        }
+
+        else
+        {
+            sessionStorage.counter = 1;
+        }
+
+        document.getElementById("result").innerHTML = "You have visited the page " + sessionStorage.counter + "time(s) in this session";
+        window.onload = counter;
+    }
+    </script>
+
+
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+  <!--  <ul>
+        <li><a class="active" href="#about">About</a></li>
+        <li><a href="#mystory">My Story</a></li>
+        <li><a href="#photography">Photos</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+-->
+
+    <div id="navbar">
+        <a class="active" href="index.html">Home</a>
+        <a href="html/mystory.html">My Story</a>
+        <a href="html/photos.html">Photos</a>
+        <a href="html/skills.html">Skills</a>
+       
+    </div>
+
+   
+
+    <!--script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+             navbar.classList.add("sticky")
+            } else {
+        navbar.classList.remove("sticky");
+            }
+        }
+
+    <script>
+-->
+    <p class="text">Pooja Desur.</p>
+
+    <p class="info"><span class="box">Hi! Welcome to the first version of my website. This is my first try at HTML/CSS/JS :) Have fun exploring!</span></p>
+
+    <p id="para"></p>
+
+    <script src="js/about.js"></script>
+    
+</body>
+</html>
